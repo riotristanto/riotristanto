@@ -1,0 +1,290 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif ;
+    font-weight: 600;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/** menu **/
+nav {
+    background-color: #F3CA52;
+    transition: 0.2s ease-in-out;
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+   
+}
+
+.menu {
+    width: 40%;
+
+}
+
+.menu > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo > img {
+    height: 45px;
+
+}
+/** hero /profil **/
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024;
+    padding: 20px;
+   
+    border-radius: 10px;
+}
+
+.profile-image {
+    width: 535px;
+    height: 714px;
+   
+    
+}
+
+.profile-text {
+    max-width: 600px;
+    margin-left: 20px;
+}
+.profile-text span {
+    font-size: 30px;
+    color: #F3CA52;
+}
+.profile-text h1 {
+    margin: 0;
+    font-size: 58px;
+}
+
+.profile-text p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.button-container {
+    margin-top: 20px; /* Jarak antara paragraf dan tombol */
+}
+
+.btn {
+    padding: 10px 20px;
+    margin-right: 10px; /* Jarak antara tombol */
+    border: none;
+    text-decoration: none;
+    background-color: #0A6847;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #F3CA52; /* Warna saat tombol di-hover */
+}
+
+/* skill */
+#skill {
+    background-color: #F6E9B2;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+#skill > .wrapper {
+    padding: 40px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#skill > .wrapper > div {
+    
+}
+
+
+#skill > .wrapper > div > img {
+   width: 80px;
+   height: 80px;
+}
+
+#skill > .wrapper > div > p {
+    margin-top: 10px;
+}
+
+#about {
+    width: 1024;
+    margin: auto;
+    position: relative;
+    padding-left: 40px;
+    
+}
+
+p {
+    line-height: 1.9rem;
+}
+
+/* about beneran */
+
+.three-columns-wrapper {
+    padding-top: 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.three-columns-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.column h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.column p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .three-columns {
+        flex-direction: column;
+    }
+}
+
+/* end about*/
+
+/* experience */
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 40px;
+    max-width: 1024px;
+    margin: 0 auto; /* Pusatkan pada layar besar */
+}
+
+.experience-title {
+    display: flex;
+    justify-content: center;
+   
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    
+}
+.experience-item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.experience-dot {
+    width: 12px;
+    height: 12px;
+    background-color: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+}
+
+.experience-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 25px;
+    height: calc(100% - 25px);
+    width: 2px;
+    background-color: #007bff;
+}
+
+.experience-content {
+    margin-left: 40px;
+    max-width: calc(100% - 80px); /* Maksimalkan ruang untuk konten */
+    text-align: left;
+}
+
+.experience-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.experience-date {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.experience-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
